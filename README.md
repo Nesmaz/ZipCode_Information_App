@@ -41,3 +41,14 @@ Contributions are welcome! If you would like to contribute to this project, plea
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+
+## Deployment
+
+This project is deployed dynamically on netlify
+
+## Credits
+
+This project was built by [Nesma Abdelel-Azeam] using [Create React App](https://create-react-app.dev/).
+
+
+Checkout [Zip Code Information App](https://zipcode-info-app.netlify.app/)
