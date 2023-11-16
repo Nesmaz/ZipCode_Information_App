@@ -14,9 +14,9 @@ export default function ZipCodeForm(){
 
   const getZipCodeInfo = async (code) => {
     const baseUrl = 'https://api.zipcodestack.com/v1/search?'
-    const apiKey = process.env.REACT_APP_ZIP_CODE_API_KEY
+    // const apiKey = process.env.REACT_APP_ZIP_CODE_API_KEY
     try {
-      const res = await axios.get(`${baseUrl}codes=${code}&apikey=${apiKey}`);
+      const res = await axios.get(`${baseUrl}codes=${code}&apikey=${process.env.REACT_APP_ZIP_CODE_API_KEY}`);
       const zipCodeResult = res.data.results[code][0];
       (res.data.results[code][0].city &&
         res.data.results[code][0].state &&
