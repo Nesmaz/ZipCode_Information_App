@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#app::after{
+  content: url("./pin.png");
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  animation: bounce 3s linear infinite;
+}
+#zipform::before{
+  content: url("./moon.png");
+  transform: scale(0.1);
+  position: absolute;
+  left: -200px;
+  top: -50px;
+  animation: swing 3s linear infinite;
+}
+#dots{
+  animation: loading 1s linear infinite;
+}
+
+@keyframes swing{
+  0%{
+    transform: rotate(-5deg)
+  }
+  50%{
+    transform: rotate(0deg)
+  }
+
+  100%{
+    transform: rotate(-5deg)
+  }
+}
+
+@keyframes bounce{
+  0%{
+    transform: translateY(-5px)
+  }
+  50%{
+    transform: translateY(0px)
+  }
+  100%{
+    transform: translateY(-5px)
+  }
+}
+@keyframes loading{
+  0%{
+    opacity:0.5
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    opacity:0.5
+  }
+}
+@media all and (max-width: 900px){
+  #zipform::before{
+    left: -50px;
+  }
+
+  #app::after{
+    top: unset;
+    bottom: 26px;
+    right: 100px;
+  }
+}
+@media all and (max-width: 370px0){
+  #zipform::before{
+    left: -20px;
+  }
 }

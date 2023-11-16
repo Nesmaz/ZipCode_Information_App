@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import ZipCodeForm from './components/ZipCodeForm'
+import ZipCodeFetch from './components/Input';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='app' className="h-screen bg-cover bg-center bg-[url('./nasa-Q1p7bh3SHj8-unsplash.jpg')]">
+      <div id='layout' className='bg-black/10 h-full w-full flex items-center justify-center'>
+        <ZipCodeForm />
+      </div>
     </div>
   );
 }
