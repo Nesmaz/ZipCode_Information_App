@@ -5,7 +5,7 @@ This is a Zip Code Information App built with React and Tailwind CSS. It allows 
 ## Features
 
 - Search for zip codes and retrieve information
-- Display details such as city, state, county, and timezone
+- Display details such as city, state, and county
 - User-friendly interface with a clean and modern design
 
 ## Technologies Used
