@@ -1,6 +1,5 @@
 import './index.css';
 import ZipCodeForm from './components/ZipCodeForm'
-import ZipCodeFetch from './components/Input';
 
 function App() {
   return (
